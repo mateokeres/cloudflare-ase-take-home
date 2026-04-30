@@ -1,0 +1,25 @@
+{
+  "name": "ase-demo-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-09-23",
+
+  "r2_buckets": [
+    {
+      "binding": "FLAGS_BUCKET",
+      "bucket_name": "ase-flags"
+    }
+  ],
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ase-flags-db",
+      "database_id": "d52781f4-9986-4170-81c8-7a6bec44e2d6"
+    }
+  ],
+
+  "vars": {
+    "TEAM_DOMAIN": "mateokeres",
+    "POLICY_AUD": "8a2d47ae3f18483017c44d12ef1b2198157b0ddc7bf2baafee4cc5222c44f933"
+  }
+}

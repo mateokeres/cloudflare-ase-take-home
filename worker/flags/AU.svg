@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Blue background -->
+  <rect width="1200" height="600" fill="#00008B"/>
+
+  <!-- Union Jack canton (top-left quarter) -->
+  <rect width="600" height="300" fill="#012169"/>
+  <!-- St Andrew cross (diagonal white) -->
+  <line x1="0" y1="0" x2="600" y2="300" stroke="#FFFFFF" stroke-width="60"/>
+  <line x1="600" y1="0" x2="0" y2="300" stroke="#FFFFFF" stroke-width="60"/>
+  <!-- St Patrick cross (diagonal red, clipped to appear behind St George) -->
+  <line x1="0" y1="0" x2="600" y2="300" stroke="#C8102E" stroke-width="40"/>
+  <line x1="600" y1="0" x2="0" y2="300" stroke="#C8102E" stroke-width="40"/>
+  <!-- St George cross (horizontal/vertical white then red) -->
+  <rect x="0" y="120" width="600" height="60" fill="#FFFFFF"/>
+  <rect x="270" y="0" width="60" height="300" fill="#FFFFFF"/>
+  <rect x="0" y="132" width="600" height="36" fill="#C8102E"/>
+  <rect x="282" y="0" width="36" height="300" fill="#C8102E"/>
+
+  <!-- Commonwealth Star (7-pointed, simplified) -->
+  <polygon points="150,390 163,432 206,432 171,457 184,500 150,475 116,500 129,457 94,432 137,432"
+           fill="#FFFFFF"/>
+
+  <!-- Southern Cross - epsilon Crux (small star) -->
+  <polygon points="830,255 836,274 856,274 840,285 846,304 830,293 814,304 820,285 804,274 824,274"
+           fill="#FFFFFF"/>
+  <!-- Southern Cross - alpha Crux (large star) -->
+  <polygon points="1050,380 1060,412 1094,412 1067,432 1077,464 1050,444 1023,464 1033,432 1006,412 1040,412"
+           fill="#FFFFFF"/>
+  <!-- Southern Cross - beta Crux -->
+  <polygon points="970,170 980,202 1014,202 987,222 997,254 970,234 943,254 953,222 926,202 960,202"
+           fill="#FFFFFF"/>
+  <!-- Southern Cross - gamma Crux -->
+  <polygon points="820,380 830,412 864,412 837,432 847,464 820,444 793,464 803,432 776,412 810,412"
+           fill="#FFFFFF"/>
+  <!-- Southern Cross - delta Crux -->
+  <polygon points="1010,270 1018,295 1044,295 1023,311 1031,336 1010,320 989,336 997,311 976,295 1002,295"
+           fill="#FFFFFF"/>
+</svg>

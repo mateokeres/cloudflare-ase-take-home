@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1000">
+  <!-- Red background (covers odd stripes) -->
+  <rect width="1900" height="1000" fill="#B22234"/>
+  <!-- White stripes (even stripes) -->
+  <rect y="76"  width="1900" height="77" fill="#FFFFFF"/>
+  <rect y="230" width="1900" height="77" fill="#FFFFFF"/>
+  <rect y="384" width="1900" height="77" fill="#FFFFFF"/>
+  <rect y="538" width="1900" height="77" fill="#FFFFFF"/>
+  <rect y="692" width="1900" height="77" fill="#FFFFFF"/>
+  <rect y="846" width="1900" height="77" fill="#FFFFFF"/>
+  <!-- Blue canton -->
+  <rect width="760" height="538" fill="#3C3B6E"/>
+  <!-- Stars (5x6 and 4x5 grid, simplified as small circles) -->
+  <!-- Row 1 (y=45) -->
+  <circle cx="63"  cy="45"  r="20" fill="#FFFFFF"/>
+  <circle cx="189" cy="45"  r="20" fill="#FFFFFF"/>
+  <circle cx="315" cy="45"  r="20" fill="#FFFFFF"/>
+  <circle cx="441" cy="45"  r="20" fill="#FFFFFF"/>
+  <circle cx="567" cy="45"  r="20" fill="#FFFFFF"/>
+  <circle cx="693" cy="45"  r="20" fill="#FFFFFF"/>
+  <!-- Row 2 (y=107) - offset -->
+  <circle cx="126" cy="107" r="20" fill="#FFFFFF"/>
+  <circle cx="252" cy="107" r="20" fill="#FFFFFF"/>
+  <circle cx="378" cy="107" r="20" fill="#FFFFFF"/>
+  <circle cx="504" cy="107" r="20" fill="#FFFFFF"/>
+  <circle cx="630" cy="107" r="20" fill="#FFFFFF"/>
+  <!-- Row 3 -->
+  <circle cx="63"  cy="169" r="20" fill="#FFFFFF"/>
+  <circle cx="189" cy="169" r="20" fill="#FFFFFF"/>
+  <circle cx="315" cy="169" r="20" fill="#FFFFFF"/>
+  <circle cx="441" cy="169" r="20" fill="#FFFFFF"/>
+  <circle cx="567" cy="169" r="20" fill="#FFFFFF"/>
+  <circle cx="693" cy="169" r="20" fill="#FFFFFF"/>
+  <!-- Row 4 -->
+  <circle cx="126" cy="231" r="20" fill="#FFFFFF"/>
+  <circle cx="252" cy="231" r="20" fill="#FFFFFF"/>
+  <circle cx="378" cy="231" r="20" fill="#FFFFFF"/>
+  <circle cx="504" cy="231" r="20" fill="#FFFFFF"/>
+  <circle cx="630" cy="231" r="20" fill="#FFFFFF"/>
+  <!-- Row 5 -->
+  <circle cx="63"  cy="293" r="20" fill="#FFFFFF"/>
+  <circle cx="189" cy="293" r="20" fill="#FFFFFF"/>
+  <circle cx="315" cy="293" r="20" fill="#FFFFFF"/>
+  <circle cx="441" cy="293" r="20" fill="#FFFFFF"/>
+  <circle cx="567" cy="293" r="20" fill="#FFFFFF"/>
+  <circle cx="693" cy="293" r="20" fill="#FFFFFF"/>
+  <!-- Row 6 -->
+  <circle cx="126" cy="355" r="20" fill="#FFFFFF"/>
+  <circle cx="252" cy="355" r="20" fill="#FFFFFF"/>
+  <circle cx="378" cy="355" r="20" fill="#FFFFFF"/>
+  <circle cx="504" cy="355" r="20" fill="#FFFFFF"/>
+  <circle cx="630" cy="355" r="20" fill="#FFFFFF"/>
+  <!-- Row 7 -->
+  <circle cx="63"  cy="417" r="20" fill="#FFFFFF"/>
+  <circle cx="189" cy="417" r="20" fill="#FFFFFF"/>
+  <circle cx="315" cy="417" r="20" fill="#FFFFFF"/>
+  <circle cx="441" cy="417" r="20" fill="#FFFFFF"/>
+  <circle cx="567" cy="417" r="20" fill="#FFFFFF"/>
+  <circle cx="693" cy="417" r="20" fill="#FFFFFF"/>
+  <!-- Row 8 -->
+  <circle cx="126" cy="479" r="20" fill="#FFFFFF"/>
+  <circle cx="252" cy="479" r="20" fill="#FFFFFF"/>
+  <circle cx="378" cy="479" r="20" fill="#FFFFFF"/>
+  <circle cx="504" cy="479" r="20" fill="#FFFFFF"/>
+  <circle cx="630" cy="479" r="20" fill="#FFFFFF"/>
+</svg>
