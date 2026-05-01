@@ -132,10 +132,10 @@ where `{country}` links to `/flags/{country}`.
 
 ## WAF and Rate Limiting
 
-WAF Managed Rulesets and Rate Limiting require a custom domain added to a Cloudflare zone. Since this assessment uses free services only (no domain purchase), these are configured in the dashboard and documented in the report rather than live-demonstrated.
+WAF Managed Rulesets and Rate Limiting require a custom domain added to a Cloudflare zone. Since this assessment uses free services only (no domain purchase), these couldn't be applied live. The report covers how they would be configured, what they protect against, and how to demonstrate them to a customer.
 
-- **WAF**: Cloudflare Managed Ruleset + OWASP Core Ruleset, both set to Block
-- **Rate limiting**: POST `/api/login`, 10 requests per 10 seconds per IP, block for 60 seconds
+- **WAF**: Cloudflare Managed Ruleset + OWASP Core Ruleset, both set to Block. Would protect `/api/search?q=` from SQL injection.
+- **Rate limiting**: POST `/api/login`, 10 requests per 10 seconds per IP, block for 60 seconds. Would protect against credential stuffing.
 
 ---
 
