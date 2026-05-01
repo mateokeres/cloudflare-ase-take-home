@@ -6,7 +6,7 @@ This repo is my submission for the Cloudflare Associate Solutions Engineer take-
 
 ---
 
-## What's in here
+## Repository contents
 
 ```
 origin-app/     Node.js/Express app - the origin server
@@ -14,7 +14,24 @@ worker/         Cloudflare Worker (TypeScript) - identity page, R2 flags, D1 fla
 worker/flags/   SVG flag assets uploaded to R2
 worker/schema.sql  D1 table definition and seed data
 ```
+## Implementation status
 
+Implemented and verified end-to-end:
+
+- Origin application
+- Cloudflare Quick Tunnel
+- Zero Trust Access with One-Time PIN
+- Cloudflare Worker identity response
+- Private R2 flag retrieval
+- D1 flag retrieval
+- Public GitHub repository
+
+Documented as customer-ready configurations:
+
+- WAF Managed Rulesets
+- Rate Limiting
+
+These two controls are normally applied to traffic flowing through an onboarded Cloudflare zone with a custom domain. The report documents how they would be configured and validated for a customer environment.
 ---
 
 ## Running the origin app locally
@@ -53,12 +70,6 @@ This gives you a temporary `trycloudflare.com` URL. Keep both terminals open dur
 ```bash
 cd worker
 npm install
-```
-
-Copy the config template and fill in your values:
-
-```bash
-cp wrangler.jsonc.example wrangler.jsonc
 ```
 
 | Field | Where to find it |
@@ -132,10 +143,12 @@ where `{country}` links to `/flags/{country}`.
 
 ## WAF and Rate Limiting
 
-WAF Managed Rulesets and Rate Limiting require a custom domain added to a Cloudflare zone. Since this assessment uses free services only (no domain purchase), these couldn't be applied live. The report covers how they would be configured, what they protect against, and how to demonstrate them to a customer.
+WAF Managed Rulesets and Rate Limiting are normally applied to traffic flowing through an onboarded Cloudflare zone with a custom domain. This demo uses Cloudflare Quick Tunnel and free-tier services without purchasing or onboarding a custom domain, so these controls are documented as customer-ready configurations rather than live zone-level rules.
 
-- **WAF**: Cloudflare Managed Ruleset + OWASP Core Ruleset, both set to Block. Would protect `/api/search?q=` from SQL injection.
-- **Rate limiting**: POST `/api/login`, 10 requests per 10 seconds per IP, block for 60 seconds. Would protect against credential stuffing.
+- **WAF**: Cloudflare Managed Ruleset and OWASP Core Ruleset, both set to Block. This protects `/api/search?q=` from SQL injection-style payloads before they reach the origin.
+- **Rate limiting**: POST `/api/login`, 10 requests per 10 seconds per IP, block for 60 seconds. This protects against brute-force login attempts and credential stuffing.
+
+The accompanying report explains the configuration, customer value, demo commands, and expected validation steps.
 
 ---
 
